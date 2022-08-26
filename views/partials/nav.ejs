@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Van-Tastic</title>
+</head>
+<body>
+    <nav>
+        <h1> Van-Tastic </h1>
+            <%if(currentUser){%>
+            <ul class="nav justify-content-center">
+   <% }else{ %>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="users/new">Sign-up</a>
+            </li>
+        </ul>      
+        <%}%>     
+    </nav>
